@@ -11,6 +11,7 @@ generator client {
 datasource db {
   provider = "sqlserver"
   url      = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
 }
 
 // Modelo para usuarios
@@ -80,4 +81,7 @@ model Video {
   webinar      Webinar  @relation(fields: [webinarId], references: [id])
 
   @@map("videos")
+}
+model prueba {
+  id Int @id @default(autoincrement())
 }
