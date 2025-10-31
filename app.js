@@ -7,7 +7,7 @@ require("dotenv").config();
 
 // Configuración de CORS
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:5173', 'http://localhost:5174', 'https://frontendstreamingvideovercel.vercel.app'],
+  origin: ['http://localhost:3000', 'http://localhost:5173', 'https://git-hub-app-c0bnggefdmcvhnb8.mexicocentral-01.azurewebsites.net', 'https://frontendstreamingvideovercel.vercel.app'],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
